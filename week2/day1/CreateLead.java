@@ -28,17 +28,17 @@ public class CreateLead {
 	
 public static void main( String[] args ) throws InterruptedException
 	    {
-	       WebDriverManager.chromedriver().setup();
+	   WebDriverManager.chromedriver().setup();
 	       
-	       ChromeDriver driver = new ChromeDriver();
+	   ChromeDriver driver = new ChromeDriver();
 	       
-	       driver.get("http://leaftaps.com/opentaps/control/main");
+	   driver.get("http://leaftaps.com/opentaps/control/main");
 	       
-	       driver.manage().window().maximize();
+	   driver.manage().window().maximize();
 	       
-	       WebElement weusername =driver.findElement(By.id("username"));
+	   WebElement weusername =driver.findElement(By.id("username"));
 	       
-	       weusername.sendKeys("Demosalesmanager");
+	   weusername.sendKeys("Demosalesmanager");
 	       
            WebElement wepassword =driver.findElement(By.id("password"));
 	       
@@ -97,6 +97,6 @@ public static void main( String[] args ) throws InterruptedException
            String title= driver.getTitle();
            
            System.out.println("Title of Resulting Page: " + title);      
-	    }
+           }
 
 }
